@@ -1,1 +1,7 @@
 @import "tailwindcss";
+/* 앱(WebView)에서만 data-apphide 요소만 숨김 */
+html.handy-app [data-apphide="true"] { display: none !important; }
+
+/* (옵션) 상단 숨김으로 생길 수 있는 여백 제거가 필요하면 추가 */
+html.handy-app body { margin-top: 0 !important; padding-top: 0 !important; }
+
